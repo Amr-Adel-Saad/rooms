@@ -46,7 +46,7 @@ const Chat = ({ location }) => {
 
     return () => {
       socket.emit('disconnect');
-      socket.disconnect();
+      socket.close();
     }
   }, [messages, usersList]);
 
@@ -60,7 +60,7 @@ const Chat = ({ location }) => {
 
   const closeChat = (e) => {
     socket.emit('disconnect');
-    socket.disconnect();
+    socket.close();
   };
 
   return (
