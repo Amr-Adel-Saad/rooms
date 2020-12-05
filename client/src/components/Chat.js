@@ -18,7 +18,7 @@ const Chat = ({ location }) => {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
   const [usersList, setUsers] = useState([]);
-  const ENDPOINT = 'https://pure-eyrie-30531.herokuapp.com/';
+  const ENDPOINT = 'https://amr-rooms.herokuapp.com/';
 
   useEffect(() => {
 
